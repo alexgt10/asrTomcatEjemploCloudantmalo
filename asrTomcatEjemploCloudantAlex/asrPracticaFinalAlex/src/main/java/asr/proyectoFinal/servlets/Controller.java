@@ -20,54 +20,34 @@ import javax.servlet.http.HttpServletResponse;
 
 import asr.proyectoFinal.dao.CloudantPalabraStore;
 import asr.proyectoFinal.dominio.Palabra;
+import asr.proyectoFinal.services.Traductor;
+import com.ibm.watson.developer_cloud.tone_analyzer.v3.ToneAnalyzer;
+import com.ibm.watson.developer_cloud.tone_analyzer.v3.model.ToneAnalysis;
+import com.ibm.watson.developer_cloud.tone_analyzer.v3.model.ToneOptions;
+import com.ibm.watson.developer_cloud.tone_analyzer.v3.model.ToneScore;
+
 
 /**
  * Servlet implementation class Controller
  */
-@WebServlet(urlPatterns = {"/listar", "/insertar", "/hablar"})
+@WebServlet(urlPatterns = {"/listar"})
 public class Controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
-		PrintWriter out = response.getWriter();
-		out.println("<html><head><meta charset=\"UTF-8\"></head><body>");
 		
 		CloudantPalabraStore store = new CloudantPalabraStore();
 		System.out.println(request.getServletPath());
 		switch(request.getServletPath())
 		{
 			case "/listar":
-				if(store.getDB() == null)
-					  out.println("No hay DB");
-				else
-					out.println("Palabras en la BD Cloudant:<br />" + store.getAll());
-				break;
 				
-			case "/insertar":
-				Palabra palabra = new Palabra();
-				String parametro = request.getParameter("palabra");
-
-				if(parametro==null)
-				{
-					out.println("usage: /insertar?palabra=palabra_a_traducir");
-				}
-				else
-				{
-					if(store.getDB() == null) 
-					{
-						out.println(String.format("Palabra: %s", palabra));
-					}
-					else
-					{
-						palabra.setName(parametro);
-						store.persist(palabra);
-					    out.println(String.format("Almacenada la palabra: %s", palabra.getName()));			    	  
-					}
-				}
+					request.setAttribute("bdGuardado", store.getAll());
+				    request.getRequestDispatcher("listado.jsp").forward(request, response);
 				break;
-		}
-		out.println("</html>");
+	}
+		
 	}
 
 	/**
