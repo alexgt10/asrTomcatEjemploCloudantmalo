@@ -7,7 +7,7 @@
 <title>Proyecto ASR new...</title>
 </head>
 <body>
-<h1>Ejemplo de Proyecto de ASR de ALEX con Cloudant</h1>
+<h1>Ejemplo de Proyecto de ASR de ALEXGT con Cloudant</h1>
 <hr />
 <p>Opciones sobre la base de datos Cloudant versión 2019:</p>
 <ul>
