@@ -23,6 +23,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
+import com.ibm.cloud.sdk.core.service.security.IamOptions;
 import com.ibm.watson.developer_cloud.speech_to_text.v1.SpeechToText;
 import com.ibm.watson.developer_cloud.speech_to_text.v1.model.RecognizeOptions;
 import com.ibm.watson.developer_cloud.speech_to_text.v1.model.SpeechResults;
@@ -49,7 +50,12 @@ public class toText extends HttpServlet {
     SpeechToText service = new SpeechToText();
     service.setUsernameAndPassword("420e2b65-c8d4-47b3-9d71-f1f5e3d0a12f", "KSJxK8YkVofE");
 
-    Part filePart = request.getPart("audio"); // Retrieves <input type="file" name="file">
+    IamOptions opt = new IamOptions.Builder()
+    	    .apiKey("b5Dc6t2ZHQHII_azrNlS1NwRAr8lXIOw-UR5GW5AKJHd")
+    	    .build();
+//    service.setIamCredentials(opt);
+    
+    Part filePart = request.getPart("audio"); 
     
     String appPath = request.getServletContext().getRealPath("");
 	 // constructs path of the directory to save uploaded file
