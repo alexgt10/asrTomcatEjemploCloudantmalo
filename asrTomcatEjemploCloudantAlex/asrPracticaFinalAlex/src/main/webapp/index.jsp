@@ -60,7 +60,7 @@
 				<div class="row">	
 					<div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
 						<h2>Let's Analysis Your transcription </h2>
-						<p class="lead">Now you can just transcript a record with just one click</p>						    <div class="item-box">
+						<p class="lead">Now you can just transcript a record with just one click</p><div class="item-box">
 						        <div class="item-top form-inline">
 						            <div class="form-group">
 						                <div class="input-group2">
