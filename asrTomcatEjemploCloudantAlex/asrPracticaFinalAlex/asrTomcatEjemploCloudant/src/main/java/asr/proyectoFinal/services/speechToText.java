@@ -28,7 +28,7 @@ import com.ibm.watson.speech_to_text.v1.SpeechToText;
 import asr.proyectoFinal.dominio.Palabra;
 
 @MultipartConfig
-@WebServlet(urlPatterns = {"/toText"})
+@WebServlet(urlPatterns = {"/speechToText"})
 public class speechToText extends HttpServlet {
   
   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
