@@ -3,14 +3,16 @@ package asr.proyectoFinal.services;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.ibm.watson.developer_cloud.language_translator.v2.LanguageTranslator; import com.ibm.watson.developer_cloud.language_translator.v2.util.Language;
+import com.ibm.watson.developer_cloud.language_translator.v2.LanguageTranslator; 
+import com.ibm.watson.developer_cloud.language_translator.v2.util.Language;
 import com.ibm.watson.developer_cloud.language_translator.v2.model.TranslateOptions.Builder;
 import com.ibm.watson.developer_cloud.language_translator.v2.model.TranslateOptions;
 import com.ibm.watson.developer_cloud.language_translator.v2.model.TranslationResult;
 public class Traductor
 {
 	public static String translate(String palabra) {
-		LanguageTranslator service = new LanguageTranslator(); service.setUsernameAndPassword("7903f49f-81fd-4979-9842-a3afb252bcbc", "Y7QGmuyeVMnV");
+		LanguageTranslator service = new LanguageTranslator(); 
+		service.setUsernameAndPassword("7903f49f-81fd-4979-9842-a3afb252bcbc", "Y7QGmuyeVMnV");
 		TranslateOptions translateOptions = new TranslateOptions.Builder()
 	              .addText(palabra)
 	              .modelId("es-en")

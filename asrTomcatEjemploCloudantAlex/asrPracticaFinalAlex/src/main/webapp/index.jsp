@@ -14,9 +14,9 @@
     <!-- Site Meta -->
     <title>Transcriptor APP</title>
     
-    <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<!--     Site Icons -->
+<!--     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> -->
+<!--     <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> -->
 
 	<!-- Google Fonts -->
  	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet"> 
@@ -27,22 +27,19 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/carousel.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="icon" href="images/icono-1.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
 </head>
 <body>
-	
+	<div id="wrapper">
 		<header class="header site-header">
 			<div class="container">
 				<nav class="navbar navbar-default yamm">
 				    <div class="container-fluid">
 				        <div class="navbar-header">
-				            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-				                <span class="sr-only">Toggle navigation</span>
-				                <span class="icon-bar"></span>
-				                <span class="icon-bar"></span>
-				                <span class="icon-bar"></span>
-				            </button>
-							<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Linda"></a>
+							<a class="navbar-brand" href="/index.jsp"><img src="images/logo.png" alt="Linda"></a>
 				        </div>
 				        <div id="navbar" class="navbar-collapse collapse">
 				            <ul class="nav navbar-nav navbar-right">
@@ -70,9 +67,9 @@
 										    <input type="file" class="form-control" name="audio" placeholder="Audio" class="form-control">
 						                </div>
 						            </div>
-        <form class="form-horizontal" action="toText" enctype="multipart/form-data" method="POST">						          
+        							<form class="form-horizontal" action="SpeechToText" enctype="multipart/form-data" method="POST">						          
 						            <input type="submit" name="send" value="Procesar" class="btn btn-default"/>
-	    </form>
+	    							</form>
 						        </div>
 						    </div>
 					</div><!-- end col -->

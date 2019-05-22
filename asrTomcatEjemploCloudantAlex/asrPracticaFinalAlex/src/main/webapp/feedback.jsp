@@ -38,14 +38,9 @@
 					<div class="col-md-9 text-center" style="border: 2px solid #EAECEE; border-radius:5px;">${requestScope.traducido}</div>
 					</div>
 					<br>
-					<div class="col-md-12" style="margin-top:10px;"><div class="col-md-offset-1 col-md-2 text-center">Ánalisis de sentimiento</div>
-					<div class="col-md-9 text-center" style="border: 2px solid #EAECEE; border-radius:5px;">${requestScope.tone}</div></div>
+<!-- 					<div class="col-md-12" style="margin-top:10px;"><div class="col-md-offset-1 col-md-2 text-center">Ánalisis de sentimiento</div> -->
+<%-- 					<div class="col-md-9 text-center" style="border: 2px solid #EAECEE; border-radius:5px;">${requestScope.tone}</div></div> --%>
 					<div class="col-md-2 col-md-offset-6" style="margin-top:10px;"><a href="index.jsp">Volver al Inicio</a></div>
 </div>
-
-
-<footer id="footer">
-	<a href="https://es-es.facebook.com/ibmwatson" ><div class="col-md-offset-2 col-md-8"><img style="height:70%;width:8%;padding-top:20px;padding-left:12px" src="images/facebook.png"></a><a href="https://twitter.com/ibmwatson?lang=es"><img style="height:70%;width:8%;padding-top:20px;padding-left:12px" src="images/twitter.png"></a></div>
-</footer>
 </body>
 </html>
