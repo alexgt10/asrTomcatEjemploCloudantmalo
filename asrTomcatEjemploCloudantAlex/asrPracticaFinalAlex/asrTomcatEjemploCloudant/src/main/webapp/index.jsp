@@ -13,7 +13,6 @@
     
     <!-- Site Meta -->
     <title>Transcriptor APP</title>
-
 	<!-- Google Fonts -->
  	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet"> 
 
