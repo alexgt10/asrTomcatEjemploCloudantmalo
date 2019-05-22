@@ -63,7 +63,7 @@
 						                </div>
 						            </div>
         							<form class="form-horizontal" action="speechToText" enctype="multipart/form-data" method="POST">						          
-						            <button type="submit" name="send" value="Procesar" class="btn btn-default"/>
+						            <button type="submit" name="send" value="Procesar" class="btn btn-default"></button>
 	    							</form>
 						        </div>
 						    </div>
