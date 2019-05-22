@@ -31,45 +31,6 @@
 </head>
 <body>
 	
-	<div id="wrapper">
-        <div class="topbar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 hidden-xs">
-                        <nav class="topbar-menu">
-                            <ul class="list-inline">
-                            	<li>Follow us: </li>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            </ul><!-- end list -->
-                        </nav><!-- end menu -->
-                    </div><!-- end col -->
-
-                    <div class="col-md-6 col-sm-6">
-                        <nav class="topbar-menu">
-                            <ul class="list-inline text-right navbar-right">
-                                <li class="dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="images/us.png" alt=""> English
-                                    <span class="fa fa-angle-down"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#"><img src="images/tr.png" alt=""> Turkish</a></li>
-                                        <li><a href="#"><img src="images/si.png" alt=""> Spanish</a></li>
-                                        <li><a href="#"><img src="images/it.png" alt=""> Italian</a></li>
-                                        <li><a href="#"><img src="images/ae.png" alt=""> Arabic</a></li>
-                                        <li><a href="#"><img src="images/de.png" alt=""> German</a></li>
-                                    </ul>
-                                </li>
-                                <li class="hidden-xs"><i class="fa fa-clock-o"></i> 08:00 - 17:00</li>
-                                <li><i class="fa fa-phone"></i> +90 987 665 55 44</li>
-                            </ul><!-- end list -->
-                        </nav><!-- end menu -->
-                    </div><!-- end col -->
-                </div><!-- end row -->
-            </div><!-- end container -->
-        </div><!-- end topbar -->
-
 		<header class="header site-header">
 			<div class="container">
 				<nav class="navbar navbar-default yamm">
@@ -96,13 +57,10 @@
 
 		<section class="section transheader homepage parallax" data-stellar-background-ratio="0.5" style="background-image:url('upload/bg_04.jpg');">
 			<div class="container">
-			<form class="form-horizontal" action="toText" enctype="multipart/form-data" method="POST">
 				<div class="row">	
 					<div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
 						<h2>Let's Analysis Your transcription </h2>
-						<p class="lead">Now you can just transcript a record with just one click</p>
-						<form class="calculateform">
-						    <div class="item-box">
+						<p class="lead">Now you can just transcript a record with just one click</p>						    <div class="item-box">
 						        <div class="item-top form-inline">
 						            <div class="form-group">
 						                <div class="input-group2">
@@ -112,13 +70,13 @@
 										    <input type="file" class="form-control" name="audio" placeholder="Audio" class="form-control">
 						                </div>
 						            </div>
-						            <button type="submit" value="Procesar" class="btn btn-default"></button>
+        <form class="form-horizontal" action="toText" enctype="multipart/form-data" method="POST">						          
+						            <input type="submit" name="send" value="Procesar" class="btn btn-default"/>
+	    </form>
 						        </div>
 						    </div>
-						</form>
 					</div><!-- end col -->
 				</div><!-- end row -->
-				</form>
 			</div><!-- end container -->
 		</section><!-- end section -->
 
