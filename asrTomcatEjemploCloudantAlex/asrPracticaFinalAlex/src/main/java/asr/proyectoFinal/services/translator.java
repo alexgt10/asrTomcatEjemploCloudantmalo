@@ -16,7 +16,7 @@ public class translator {
 		
 		
 		IamOptions options = new IamOptions.Builder()
-			    .apiKey("ScaO5XZJH4J7bEgWDNQJu3O2bGa2plsEoMBfZGty-yIM")
+			    .apiKey("wl9YfLd28tY7IyyuwEKn3cnKaN5tlVZkrhdqXQLOqGLX")
 			    .build();
 		LanguageTranslator languageTranslator = new LanguageTranslator("2018-05-01", options);
 		

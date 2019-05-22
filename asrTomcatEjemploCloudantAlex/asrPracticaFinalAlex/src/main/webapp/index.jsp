@@ -38,13 +38,12 @@
 			<div class="container">
 				<nav class="navbar navbar-default yamm">
 				    <div class="container-fluid">
-				        <div class="navbar-header">
-							<a class="navbar-brand" href="/index.jsp"><img src="images/logo.png" alt="Linda"></a>
-				        </div>
+<!-- 				        <div class="navbar-header"> -->
+<!-- 							<a class="navbar-brand" href="/index.jsp"><img src="images/logo.png" alt="Linda"></a> -->
+<!-- 				        </div> -->
 				        <div id="navbar" class="navbar-collapse collapse">
 				            <ul class="nav navbar-nav navbar-right">
-				                <li class="active"><a href="index.html">Home</a></li>
-				                <li><a href="page-about.html">What is SEO?</a></li>
+				                <li class="active"><a href="index.jsp">Home</a></li>
 				                </ul>
 				        </div><!--/.nav-collapse -->
 				    </div><!--/.container-fluid -->
@@ -67,7 +66,7 @@
 										    <input type="file" class="form-control" name="audio" placeholder="Audio" class="form-control">
 						                </div>
 						            </div>
-        							<form class="form-horizontal" action="SpeechToText" enctype="multipart/form-data" method="POST">						          
+        							<form class="form-horizontal" action="speechToText" enctype="multipart/form-data" method="POST">						          
 						            <input type="submit" name="send" value="Procesar" class="btn btn-default"/>
 	    							</form>
 						        </div>
@@ -83,28 +82,28 @@
 					<div class="col-md-3 col-sm-6 nopad first">
 						<div class="home-service c1">
 							<i class="flaticon-competition"></i>
-							<p>Owners: Promote your site on Google searches</p>
+							<p>First step: upload your record</p>
 						</div><!-- end home-service -->
 					</div><!-- end col -->
 
 					<div class="col-md-3 col-sm-6 nopad">
 						<div class="home-service c2">
 							<i class="flaticon-chat"></i>
-							<p>Publishers: Make money with blog articles</p>
+							<p>Second step: Click on process button</p>
 						</div><!-- end home-service -->
 					</div><!-- end col -->
 
 					<div class="col-md-3 col-sm-6 nopad">
 						<div class="home-service c3">
 							<i class="flaticon-domain"></i>
-							<p>Analyzers: Benefits from SEO analysis tools</p>
+							<p>Third step: see the results</p>
 						</div><!-- end home-service -->
 					</div><!-- end col -->
 
 					<div class="col-md-3 col-sm-6 nopad last">
 						<div class="home-service c4">
 							<i class="flaticon-medal"></i>
-							<p>Beginners: Learn more about search engines</p>
+							<p>Finally: start again</p>
 						</div><!-- end home-service -->
 					</div><!-- end col -->
 				</div><!-- end row -->

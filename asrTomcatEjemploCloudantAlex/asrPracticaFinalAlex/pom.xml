@@ -94,25 +94,7 @@
 		<dependency>
  			<groupId>com.ibm.watson.developer_cloud</groupId>
   			<artifactId>java-sdk</artifactId>
- 			<version>7.0.0</version>
-		</dependency>
-		
-		<dependency>
- 			<groupId>com.ibm.watson.developer_cloud</groupId>
-  			<artifactId>java-sdk</artifactId>
  			<version>6.14.0</version>
-		</dependency>
-		
-		<dependency>
-  			<groupId>com.ibm.watson.developer_cloud</groupId>
-  			<artifactId>java-sdk</artifactId>
-  			<version>5.5.0</version>
-		</dependency>
-		
-		<dependency>
-  			<groupId>com.ibm.watson.developer_cloud</groupId>
- 			<artifactId>java-sdk</artifactId>
-			<version>4.1.0</version>
 		</dependency>
 		
 		<dependency>
