@@ -13,10 +13,6 @@
     
     <!-- Site Meta -->
     <title>Transcriptor APP</title>
-    
-<!--     Site Icons -->
-<!--     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> -->
-<!--     <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> -->
 
 	<!-- Google Fonts -->
  	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet"> 
